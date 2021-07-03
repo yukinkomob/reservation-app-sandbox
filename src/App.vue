@@ -1,28 +1,22 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" width="25%" />
-    <HelloWorld msg="Hello Vue in CodeSandbox!" />
-  </div>
+  <v-app id="app">
+    <div class="layout">
+      <router-view></router-view>
+      aaa
+    </div>
+  </v-app>
 </template>
-
 <script>
-import HelloWorld from "./components/HelloWorld";
-
 export default {
-  name: "App",
-  components: {
-    HelloWorld,
+  mounted() {
+    let scriptEl = document.createElement("script");
+    scriptEl.setAttribute("src", "https://kit.fontawesome.com/98c77f9d64.js");
+    scriptEl.setAttribute("crossorigin", "anonymous");
+    document.head.appendChild(scriptEl);
+
+    scriptEl = document.createElement("script");
+    scriptEl.setAttribute("src", "https://code.jquery.com/jquery-1.10.2.js");
+    document.head.appendChild(scriptEl);
   },
 };
 </script>
-
-<style>
-#app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
