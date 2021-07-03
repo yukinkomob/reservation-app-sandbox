@@ -30,97 +30,97 @@ const router = new Router({
   routes: [
     //ルーティングの設定
     {
-      path: '/',
+      path: "/",
       component: Login
     },
     {
-      path: '/home/top',
+      path: "/home/top",
       component: Login
     },
     {
-      path: '/sign_up',
+      path: "/sign_up",
       component: RegistrationForm
     },
     {
-      path: '/sign_up_confirm',
+      path: "/sign_up_confirm",
       component: RegistrationConfirm
     },
     {
-      path: '/sign_up_complete',
+      path: "/sign_up_complete",
       component: RegistrationCompletion
     },
     {
-      path: '/login',
+      path: "/login",
       component: Login
     },
     {
-      path: '/account_info',
+      path: "/account_info",
       component: AccountInfo
     },
     {
-      path: '/account_edit',
+      path: "/account_edit",
       component: AccountEdit
     },
     {
-      path: '/reservation_form',
+      path: "/reservation_form",
       component: ReservationForm
     },
     {
-      path: '/reservation_confirm',
+      path: "/reservation_confirm",
       component: ReservationConfirm
     },
     {
-      path: '/reservation_complete',
+      path: "/reservation_complete",
       component: ReservationCompletion
     },
     {
-      path: '/reservation_list',
+      path: "/reservation_list",
       component: ReservationList
     },
     {
-      path: '/reservation_detail',
+      path: "/reservation_detail",
       component: ReservationDetail
     },
     {
-      path: '/reservation_edit',
+      path: "/reservation_edit",
       component: ReservationEdit
     },
     {
-      path: '/reservation_history',
+      path: "/reservation_history",
       component: ReservationHistory
     },
     {
-      path: '/reservation_view_history',
+      path: "/reservation_view_history",
       component: ReservationViewHistory
     },
     {
-      path: '/store_login',
+      path: "/store_login",
       component: StoreLogin
     },
     {
-      path: '/store_reservation_list',
+      path: "/store_reservation_list",
       component: StoreReservationList
     },
     {
-      path: '/store_account_form',
+      path: "/store_account_form",
       component: StoreAccountForm
     },
     {
-      path: '/store_account_confirm',
+      path: "/store_account_confirm",
       component: StoreAccountConfirm
     },
     {
-      path: '/store_user_list',
+      path: "/store_user_list",
       component: StoreUserList
     },
     {
-      path: '/store_dash_board',
+      path: "/store_dash_board",
       component: StoreDashBoard
     },
     {
-      path: '/store_settings',
+      path: "/store_settings",
       component: StoreSettings
-    },
-  ],
+    }
+  ]
 });
 export default router;
